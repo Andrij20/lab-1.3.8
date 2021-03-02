@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap-reverse ;
+    align-items: center;
+    background-image: url(../img/space.jpg);
+    
+   
+    }
+
+
+    
+     .orbit {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        border-radius: 50%;
+        border: 1.5px solid rgb(153, 151, 151);
+        display: flex;
+       justify-content: center;
+         align-items: center;
+        flex-wrap: wrap;
+        animation: spin 10s  ;
+     }
+     
+     .mars {
+         position: absolute;
+         top: -20px;
+      width: 40px;
+      height: 40px;
+      background-color: red;
+      border-radius: 50%;
+     }
+     
+    
+    .sun {
+        background-image: radial-gradient(rgb(180, 135, 12),orange);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        
+        
+      
+
+    }
+    @keyframes spin {
+    from { transform: rotate(0); }
+    to {transform: rotate(400deg);}
+    } 
+    .sun:hover {
+        transform: scale(1.2);
+    }
+    .marss:hover {
+        transform: scale(1.2);
+        
+    }
+    
+    
+    .orbit:hover {
+          animation-play-state: paused;
+    
+    }
+    
